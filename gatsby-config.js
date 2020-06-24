@@ -1,9 +1,12 @@
 
 module.exports = {
+  pathPrefix: "/portfolio",
   siteMetadata: {
-    title: "Justyna Ptak - portfolio",
-    description: "Personal website of Justyna Ptak",
-    author: "Justyna Ptak",
+    title: "Gatsby Tutorial",
+    description: "some random description",
+    author: "@johndoe",
+    data: ["item1", "item2"],
+    peron: { name: "peter", age: 32 },
   },
   plugins: [
     `gatsby-transformer-sharp`,

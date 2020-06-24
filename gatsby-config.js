@@ -1,11 +1,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Tutorial",
-    description: "some random description",
-    author: "@johndoe",
-    data: ["item1", "item2"],
-    peron: { name: "peter", age: 32 },
+    title: "Justyna Ptak - portfolio",
+    description: "Personal website of Justyna Ptak",
+    author: "Justyna Ptak",
   },
   plugins: [
     `gatsby-transformer-sharp`,

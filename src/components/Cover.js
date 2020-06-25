@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/style.css"
+import  "../components/style.css"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -21,7 +21,7 @@ const Cover = () => {
     <div>
       <Image className="mainphoto" fluid={data.cover.childImageSharp.fluid} />
       <h1 className="mainsentence">
-        Hi, my name is Justyna, <br /> and i am deeply interested in user
+        Hi, my name is Justyna, <br /> and I am deeply interested in user
         experience <br />
         and catching moment with my camera, based in Wrocław, Poland
       </h1>

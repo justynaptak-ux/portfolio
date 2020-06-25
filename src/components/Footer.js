@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "../components/footer.css"
+import "../components/footer.css"
 
 const Footer = () => {
   return (
@@ -9,9 +9,9 @@ const Footer = () => {
         all my involvement in my work, and here are the effects.
       </h5>
       <h6 className="mail">
-        e-mail: justyna.ux@gmail.com <br />
-        phone number: +48 728999242
+        e-mail: justyna.ptak.ux@gmail.com <br />
       </h6>
+      <h6>copyrights: Justyna Ptak</h6>
     </div>
   )
 }

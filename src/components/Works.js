@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
+import "../components/style.css"
 import { graphql, useStaticQuery } from "gatsby"
-import { Link } from "gatsby"
 
 const GetExamples = graphql`
   {
@@ -40,6 +40,7 @@ const Works = () => {
           className="image"
           fluid={data.waymore.childImageSharp.fluid}
         ></Image>
+
         <div className="description">
           <h3>
             <a href="https://www.figma.com/proto/7WJt1vaekucXoIg47bF3lh/Waymore?node-id=61%3A4&scaling=min-zoom">
@@ -59,7 +60,6 @@ const Works = () => {
         ></Image>
         <div className="description">
           <h3>
-            {" "}
             <a href="https://www.figma.com/proto/sxRcQKsyXyS9B4HTBtaU9Q/seus-v3?node-id=46%3A203&scaling=min-zoom">
               2. SEUS
             </a>
@@ -78,7 +78,10 @@ const Works = () => {
           fluid={data.casino.childImageSharp.fluid}
         ></Image>
         <div className="description">
-          <h3>3. Casino del Papel</h3> <br />
+          <a href="https://www.figma.com/proto/sLBtAKpy23JnQZrfInV4BR/Untitled?node-id=187%3A12&scaling=min-zoom">
+            <h3>3. Casino del Papel</h3>
+          </a>
+          <br />
           This is the third project that is part of the bootcamp in which I
           participated. My task was to come up with a form in which we can
           present a platform for playing two games - blackjack and sapper. The

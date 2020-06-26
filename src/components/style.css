@@ -14,34 +14,32 @@ body {
   box-sizing: border-box;
 }
 
-.mainphoto {
-  max-width: 100%;
-  opacity: 0.5;
-  text-align: center;
-  margin: none;
-  height: 32em;
-  position: relative;
-  z-index: -2;
-}
-.mainsentence {
-  text-align: center;
-  font-size: 1.3em;
-  width: 35em;
-  padding: 2em;
-  line-height: 2.5em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.background {
+  height: 30em;
+  width: 100%;
+  display: flex;
   z-index: -1;
 }
 
+.mainsentence {
+  padding: 4em;
+  font-size: 1.3em;
+  padding: 2em;
+  line-height: 2.5em;
+  width: 100%;
+  height: 23.1em;
+  background-color: rgba(8, 82, 85, 0.404);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .coordinates {
+  margin-top: 3em;
   font-size: 1em;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .margincontainer {
@@ -79,12 +77,13 @@ a:active {
   height: 20em;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
   margin-top: 4em;
   margin-bottom: 4em;
 }
 
 .image {
-  width: 50%;
+  width: 35%;
   height: 80%;
   z-index: -1;
   opacity: 0.7;
@@ -211,26 +210,29 @@ p {
 }
 
 .aboutcontainer {
+  margin-top: 4em;
+  margin-bottom: 4em;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
-  border-style: solid;
   justify-content: center;
+  align-items: stretch;
 }
 
 .profilephoto {
   width: 40%;
-  height: 40em;
+
   z-index: -1;
+  margin: 2em;
 }
 
 .mystory {
-  width: 60%;
-
-  text-align: center;
-  padding: 2em;
-  font-size: 1em;
+  width: 40%;
+  text-align: right;
+  margin: 2em;
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 .aboutme {
@@ -242,34 +244,40 @@ p {
   position: relative;
 }
 
-/* .mystory {
-  width: 40%;
-  font-size: 1.3em;
-  position: absolute;
-  text-align: right
-  top: 40%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-} */
-
 @media screen and (max-width: 740px) {
   .mainsentence {
-    font-size: 1.5em;
-    width: 35em;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+  }
+
+  .aboutcontainer {
+    width: 80%;
+  }
+
+  .mystory {
+    text-align: left;
+    /* width: 80%; */
   }
 }
 
 @media screen and (max-width: 830px) {
   .mainsentence {
-    font-size: 1.3em;
-    width: 35em;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .mainsentence {
-    font-size: 1em;
-    width: 25em;
+    width: 100%;
+    height: auto;
+  }
+
+  .example {
+    height: 30em;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .description {
@@ -282,13 +290,8 @@ p {
 
   .image {
     width: 100%;
-    height: 50%;
+    height: 40%;
     margin: 0;
-  }
-
-  .example {
-    height: 30em;
-    flex-direction: column;
   }
 
   .technologies {
@@ -388,6 +391,7 @@ p {
   .footercontainer {
     padding: 2em;
     height: 15em;
+    font-size: 0.8em;
   }
 
   h5 {
@@ -401,16 +405,22 @@ p {
   .aboutcontainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .profilephoto {
-    width: 100%;
-    height: 20em;
-  }
-
-  .aboutme {
-    width: 100%;
+    width: 90%;
     height: 15em;
+    margin: 2em;
+  }
+  .mystory {
+    text-align: left;
+    width: 90%;
+    margin: 2em;
   }
 }
 
@@ -423,7 +433,7 @@ p {
     font-size: 1em;
     padding: 2em;
     line-height: 2.5em;
-    width: 23em;
+    width: 100%;
   }
 
   .coordinates {
@@ -545,7 +555,7 @@ p {
 
   .footercontainer {
     padding: 2em;
-    height: 15em;
+    height: 13em;
   }
 
   h5 {
@@ -570,9 +580,8 @@ p {
 @media screen and (max-width: 440px) {
   .mainsentence {
     font-size: 0.8em;
-    width: 25em;
-    height: 20em;
-    margin-bottom: 2em;
+    width: 100%;
+    height: auto;
   }
 
   .technologies {
@@ -590,8 +599,7 @@ p {
 @media screen and (max-width: 340px) {
   .mainsentence {
     font-size: 0.8em;
-    width: 23em;
-    height: 25em;
-    margin-bottom: 2em;
+    width: 100%;
+    height: auto;
   }
 }

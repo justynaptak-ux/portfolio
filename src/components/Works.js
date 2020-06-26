@@ -1,37 +1,37 @@
-import React from "react"
-import Image from "gatsby-image"
-import "../components/style.css"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "react";
+import Image from "gatsby-image";
+import "../components/style.css";
+import { graphql, useStaticQuery } from "gatsby";
 
 const GetExamples = graphql`
   {
     waymore: file(relativePath: { eq: "waymore.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     seus: file(relativePath: { eq: "seus.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
     casino: file(relativePath: { eq: "casino.png" }) {
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
   }
-`
+`;
 
 const Works = () => {
-  const data = useStaticQuery(GetExamples)
-  console.log(data)
+  const data = useStaticQuery(GetExamples);
+  console.log(data);
   return (
     <div>
       <section className="sections">works</section>
@@ -90,7 +90,7 @@ const Works = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;

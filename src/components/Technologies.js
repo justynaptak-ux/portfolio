@@ -63,7 +63,7 @@ const GetIcons = graphql`
         }
       }
     }
-    vscode: file(relativePath: { eq: "vscode.jpg" }) {
+    vscode: file(relativePath: { eq: "vscode.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_noBase64

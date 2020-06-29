@@ -447,7 +447,7 @@ p {
   .description {
     font-size: 0.8em;
     width: 100%;
-    height: 70%;
+    height: auto;
     box-sizing: border-box;
   }
 
@@ -560,7 +560,7 @@ p {
 
   .footercontainer {
     padding: 2em;
-    height: 13em;
+    height: 15em;
     margin-top: 5em;
   }
 
@@ -591,7 +591,7 @@ p {
   }
 
   .technologies {
-    height: 30em;
+    height: 45em;
   }
   .technologiesbox {
     height: 15em;

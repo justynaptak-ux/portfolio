@@ -26,9 +26,8 @@ const Background = () => {
       >
         <div className="mainsentence">
           <b>
-            Hi, my name is Justyna, <br /> and I am deeply interested in user
-            experience <br />
-            and catching moment with my camera, based in Wrocław, Poland
+            Hi, I am Justyna, <br /> junior UX/UI designer  <br /> interested in web development <br />
+            and catching moments with a camera. <br /> Based in Wrocław, Poland
           </b>
           <div className="coordinates">17°02′E, 51°06′N</div>
         </div>

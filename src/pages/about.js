@@ -1,8 +1,9 @@
-import React from "react"
-import Layout from "../components/Layout"
-import "../components/style.css"
-import Image from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "react";
+import Layout from "../components/Layout";
+import "../components/style.css";
+import Image from "gatsby-image";
+import CV from "../documents/JustynaPtakCV.pdf";
+import { graphql, useStaticQuery } from "gatsby";
 
 const GetProfile = graphql`
   {
@@ -21,10 +22,10 @@ const GetProfile = graphql`
       }
     }
   }
-`
+`;
 
 const About = () => {
-  const data = useStaticQuery(GetProfile)
+  const data = useStaticQuery(GetProfile);
   return (
     <Layout>
       <div className="aboutcontainer">
@@ -32,10 +33,6 @@ const About = () => {
           className="profilephoto"
           fluid={data.profile.childImageSharp.fluid}
         />
-        {/* <Image
-          className="aboutme"
-          fluid={data.coverphoto2.childImageSharp.fluid}
-        ></Image> */}
         <div className="mystory">
           <h3>Who am I?</h3>
           <br /> If I were to shorten the answer to a minimalist form - a
@@ -47,23 +44,42 @@ const About = () => {
           devoting almost every free moment to it. Through photos I try to show
           people the world from my perspective. I love this passion for the
           attention it has brought to my life and the motivation to focus more
-          deeply on my surroundings. <br /> <br /> It takes a lot of time for me
-          to travel small and large, which I need almost like oxygen. The vision
-          of having to stay in one place for too long is tiring for me, so I
-          care about this need to visit whenever I can. In every city I visit, I
-          want to feel the place it has to offer and learn as much as possible
-          about it, while avoiding the most famous tourist facilities. Spending
-          time in the wild I have learned to relax on a much deeper level, which
-          in other conditions is very difficult.
+          deeply on my surroundings. <br /> <br />
+          I discovered UX Design barely over a year ago. I really wanted to
+          change something in my life and make my work creative and necessary.
+          So when I understood what UX Designer was all about, my intuition
+          pushed me in this direction. Going deeper into the next issues during
+          the courses gave me great satisfaction and I feel excited about my
+          future job. <br /> <br />
+          It takes a lot of time for me to travel small and large, which I need
+          almost like oxygen. I love my home, but I try to take care of this
+          need whenever possible. In every city I visit, I want to feel the
+          place it has to offer and learn as much as possible about it, while
+          avoiding the most famous tourist facilities. Spending time in the
+          nature I have learned to relax on a much deeper level, which in other
+          conditions is almost impossible.
           <br /> <br /> Other (and there aren't that many) moments I spend on
           learning new things, my latest discoveries are riding a longboard and
           playing a djembe drum. I try to improve my education in various fields
-          of knowledge with the help of popular science books that allow me to
+          of knowledge with the help of popular science books, that allow me to
           better understand how this world works.
+          <br />
+          <br />
+          <h3>
+            Check out my profile on
+            <a href="https://www.linkedin.com/in/justyna-ptak-ux/">
+              {" "}
+              LinkedIn{" "}
+            </a>
+            or my
+            <a href={CV} download>
+              CV
+            </a>
+          </h3>
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

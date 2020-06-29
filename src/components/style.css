@@ -12,6 +12,7 @@ body {
   letter-spacing: 0.2em;
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
+  line-height: 2em;
 }
 
 .background {
@@ -86,12 +87,12 @@ a:active {
   width: 35%;
   height: 80%;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.9;
   transition: all 0.2s ease-in-out;
 }
 
 .description {
-  width: 50%;
+  width: 60%;
   height: auto;
   text-align: right;
   line-height: 1.4em;
@@ -131,7 +132,7 @@ p {
 
 .photography {
   width: 100%;
-  height: 90em;
+  height: 100em;
   margin-top: 1em;
   margin-bottom: 2em;
   text-align: center;
@@ -157,47 +158,40 @@ p {
 
 .photoitem1 {
   height: auto;
-  border-style: solid;
-  border-color: rgba(8, 82, 85, 0.952);
   margin: 0.7em;
   width: 25%;
   flex-basis: 2;
+  z-index: -1;
 }
 
 .photoitem1:nth-child(1) {
-  border-color: rgba(8, 82, 85, 0.952);
   width: 15%;
 }
 .photoitem1:nth-child(2) {
-  border-color: rgba(8, 82, 85, 0.952);
   width: 45%;
 }
 
 .photoitem2 {
   height: auto;
-  border-style: solid;
-  border-color: rgba(8, 82, 85, 0.952);
   margin: 0.7em;
   width: 25%;
   flex-basis: 2;
+  z-index: -1;
 }
 
 .photoitem2:nth-child(2) {
-  border-color: rgba(8, 82, 85, 0.952);
   width: 15%;
 }
 .photoitem2:nth-child(3) {
-  border-color: rgba(8, 82, 85, 0.952);
   width: 45%;
 }
 
 .photoitem {
   height: auto;
-  border-style: solid;
-  border-color: rgba(8, 82, 85, 0.952);
   margin: 0.7em;
   width: 25%;
   flex-basis: 2;
+  z-index: -1;
 }
 
 .photoitem:nth-child(1) {
@@ -261,6 +255,12 @@ p {
   }
 }
 
+@media screen and (max-width: 970px) {
+  .example {
+    height: 27em;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .mainsentence {
     width: 100%;
@@ -269,13 +269,17 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    letter-spacing: 0.1em;
+  }
+
   .mainsentence {
     width: 100%;
     height: auto;
   }
 
   .example {
-    height: 30em;
+    height: 37em;
     flex-direction: column;
     align-items: flex-end;
   }
@@ -283,7 +287,7 @@ p {
   .description {
     font-size: 1em;
     width: 100%;
-    height: 50%;
+    height: 60%;
     padding: 2em 0 1em 1em;
     box-sizing: border-box;
   }
@@ -295,7 +299,7 @@ p {
   }
 
   .technologies {
-    height: 25em;
+    height: 30em;
   }
 
   .technologies p {
@@ -443,8 +447,7 @@ p {
   .description {
     font-size: 0.8em;
     width: 100%;
-    height: 50%;
-
+    height: 70%;
     box-sizing: border-box;
   }
 
@@ -463,7 +466,7 @@ p {
   }
 
   .technologies {
-    height: 25em;
+    height: 30em;
   }
 
   .technologiesbox {
@@ -472,10 +475,13 @@ p {
 
   .photography {
     height: 255em;
+    display: flex;
+    align-items: center;
   }
   .photocontainer {
     height: 245em;
     flex-direction: column;
+    align-items: center;
   }
 
   .photos {
@@ -483,7 +489,6 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 1em;
-    margin-bottom: 1em;
   }
 
   .photoitem1 {
@@ -556,6 +561,7 @@ p {
   .footercontainer {
     padding: 2em;
     height: 13em;
+    margin-top: 5em;
   }
 
   h5 {

@@ -1,6 +1,78 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import Image from "gatsby-image";
+import "../components/style.css";
+
+const GetImages = graphql`
+  {
+    projector1: file(relativePath: { eq: "projector1.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    projector2: file(relativePath: { eq: "projector2.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    projector3: file(relativePath: { eq: "projector3.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    basia: file(relativePath: { eq: "basia.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    winetu: file(relativePath: { eq: "winetu.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    grzanka: file(relativePath: { eq: "grzanka.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    asia: file(relativePath: { eq: "asia.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    stolik: file(relativePath: { eq: "stolik.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+    palmiarnia: file(relativePath: { eq: "palmiarnia.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_noBase64
+        }
+      }
+    }
+  }
+`;
 
 const Photos = () => {
+  const data = useStaticQuery(GetImages);
   return (
     <div>
       <section className="sections">photography</section>
@@ -12,21 +84,46 @@ const Photos = () => {
         </p>
         <div className="photocontainer">
           <div className="photos">
-            <div className="photoitem1"></div>
-            <div className="photoitem1"></div>
-            <div className="photoitem1"></div>
+            <Image
+              className="photoitem1"
+              fluid={data.projector2.childImageSharp.fluid}
+            ></Image>
+            <Image
+              className="photoitem1"
+              fluid={data.projector1.childImageSharp.fluid}
+            ></Image>
+            <Image
+              className="photoitem1"
+              fluid={data.projector3.childImageSharp.fluid}
+            ></Image>
           </div>
           <div className="photos">
-            {" "}
-            <div className="photoitem2"></div>
-            <div className="photoitem2"></div>
-            <div className="photoitem2"></div>
+            <Image
+              className="photoitem2"
+              fluid={data.grzanka.childImageSharp.fluid}
+            ></Image>
+            <Image
+              className="photoitem2"
+              fluid={data.basia.childImageSharp.fluid}
+            ></Image>
+            <Image
+              className="photoitem2"
+              fluid={data.winetu.childImageSharp.fluid}
+            ></Image>
           </div>
           <div className="photos">
-            {" "}
-            <div className="photoitem"></div>
-            <div className="photoitem"></div>
-            <div className="photoitem"></div>
+            <Image
+              className="photoitem"
+              fluid={data.asia.childImageSharp.fluid}
+            ></Image>
+            <Image
+              className="photoitem"
+              fluid={data.stolik.childImageSharp.fluid}
+            ></Image>
+            <Image
+              className="photoitem"
+              fluid={data.palmiarnia.childImageSharp.fluid}
+            ></Image>
           </div>
         </div>
       </div>

@@ -3,8 +3,6 @@ import "../components/style.css";
 import Image from "gatsby-image";
 import { graphql, useStaticQuery } from "gatsby";
 
-
-
 const GetIcons = graphql`
   {
     html: file(relativePath: { eq: "html5.png" }) {

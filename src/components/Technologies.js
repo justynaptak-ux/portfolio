@@ -78,9 +78,9 @@ const Technologies = () => {
       <section className="sections">web development</section>
       <div className="technologies">
         <p>
-          During this year I learned many useful digital solutions. Starting
-          with programming languages ​​and ending with graphic programs. I am
-          familiar with technologies such as:
+          Besides UX/UI projects I am also interested in web development. Since the beginning of 2020 I've learned
+          many useful digital solutions from both of these domains: starting
+          with programming languages ​​and ending with graphic programs. Here is a list of technologies I am the most familiar with:
         </p>
         <div className="technologiesbox">
           <Image className="circle" fluid={data.html.childImageSharp.fluid} />

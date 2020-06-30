@@ -33,7 +33,7 @@ const Works = () => {
   const data = useStaticQuery(GetExamples);
   return (
     <div>
-      <section className="sections">works</section>
+      <section className="sections">projects</section>
       <div className="example">
         <Image
           className="image"
@@ -46,17 +46,16 @@ const Works = () => {
               target="_blank"
               href="https://www.figma.com/proto/Z97Gpe4gtgMGRI0ZXxYgiH/Waymore-Portfolio?node-id=0%3A1&scaling=min-zoom"
             >
-              1. Waymore
+              Waymore
             </a>
           </h3>
           <br />
-          Waymore is a vision of a creative collective initiated by my friend.
-          He invited me to co-create it, starting from making a website
-          prototype. He provided me with the logo and the desired colors, which
-          I based on in this project. My goal was to create a clear website,
-          thanks to which the client would quickly understand what is hidden
-          under the name "creative collective". The challenge for me was the
-          neon colours, which I had not used before.
+          Waymore is a company founded by a friend, whose vision is to build a creative collective.
+          I was invited to co-create it by building it's website
+          prototype. For this, I was provided with the logotype and the colors palette as a base.
+           <br /><br />
+          My goal was to create a clear, easy to navigate website, through which the client would quickly understand what hides
+          under the name "creative collective". The neon colors were the biggest challenge since I haven't used them before.
           <br /> <br />
           <a
             target="_blank"
@@ -77,16 +76,17 @@ const Works = () => {
               target="_blank"
               href="https://www.figma.com/proto/M2fw2LihoQYhE0y7FzET28/SEUS-Portfolio?node-id=0%3A1&scaling=min-zoom"
             >
-              2. SEUS
+              SEUS
             </a>
           </h3>
           <br />
           SEUS is a Wroclaw-based company with 10 years of experience in the SEO
-          industry. The first challenge was just to get to know how positioning
-          works, because I had little idea about it. For the first time I faced
-          the cooperation with a client, an attempt to understand through a
-          marketing brief what feelings the website is supposed to evoke and an
-          attempt to change an older version of the website for a new one.
+          industry. I was asked to re-design their website.
+          It was my first fully professional experience.  <br /><br />
+
+          The first challenge was to understand how web positioning
+          works, which was really interesting. It was also the first time I "faced the client"  to understand what his expectations are
+           and what feelings the website is supposed to evoke.
           <br /> <br />
           <a
             target="_blank"
@@ -108,16 +108,18 @@ const Works = () => {
             rel="noreferrer"
             href="https://www.figma.com/proto/sLBtAKpy23JnQZrfInV4BR/Untitled?node-id=187%3A12&scaling=min-zoom"
           >
-            <h3>3. Casino del Papel</h3>
+            <h3>Casino del Papel (bootcamp project)</h3>
           </a>
           <br />
-          During the Coderscamp, I've been doing the look of every project. I
-          was the only person who was interested in it, so I was happy to take
-          on more tasks. However, it was special for me because the
-          recommendation for this one was to create a site to play two games.
-          The rest of the teams came up with BlackJack and Saper and I wanted to
-          make these basic games more attractive. It wasn't easy, because... I
-          never played games. That's how Casino de Papel was created, inspired
+          During "Coderscamp", I've done the visuals for every project I was involved in. I
+          was the only one interested in UX/UI (and not only web development), so I was happy to take
+          on more tasks.
+           <br /><br />
+
+           This particular project was very special - we had to create a site to play two games.
+          The rest of the team came up with BlackJack and Saper and I wanted to
+          make these basic games more attractive. It wasn't easy, since I've
+          never played any games. That's how "Casino del Papel" was created, inspired
           by the story of the famous Netflix series. <br /> <br />
           <a
             target="_blank"

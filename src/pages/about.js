@@ -35,46 +35,56 @@ const About = () => {
         />
         <div className="mystory">
           <h3>Who am I?</h3>
-          <br /> If I were to shorten the answer to a minimalist form - a
-          critical and open mind. Behind every thing I do and learn is the
-          question "why?" To develop the topic a bit, I am a cook by education,
-          and my specialty is plant cuisine. The recipes are only an inspiration
-          for me, and I try to take care of the rest myself.
-          <br /> <br /> I have been learning digital photography for a year now,
-          devoting almost every free moment to it. Through photos I try to show
-          people the world from my perspective. I love this passion for the
-          attention it has brought to my life and the motivation to focus more
-          deeply on my surroundings. <br /> <br />
-          I discovered UX Design barely over a year ago. I really wanted to
-          change something in my life and make my work creative and necessary.
+          <br /> If I were to give you a minimalistic answer - a
+          critical and open mind. There is always a "why" behind everything I do and learn.
+
+          <br /> <br />
+          I am a cook by education,
+          and my specialty is vegan cuisine. When I cook, the recipes are only an inspiration
+          for me. I love to experiment and I try to improve them using my own experience.
+           <br /> <br />
+
+          I only discovered UX Design in mid 2019. I really wanted to
+          change something in my life by finding a profession which is both creative and useful.
           So when I understood what UX Designer was all about, my intuition
-          pushed me in this direction. Going deeper into the next issues during
-          the courses gave me great satisfaction and I feel excited about my
-          future job. <br /> <br />
-          It takes a lot of time for me to travel small and large, which I need
-          almost like oxygen. I love my home, but I try to take care of this
-          need whenever possible. In every city I visit, I want to feel the
-          place it has to offer and learn as much as possible about it, while
-          avoiding the most famous tourist facilities. Spending time in the
-          nature I have learned to relax on a much deeper level, which in other
+          pushed me in this direction. Learning more and solving new, ever more complex issues during
+          various courses gave me great satisfaction. I feel truly excited about my
+          future career.
+
+          <br /> <br /> In parallel I have been learning about digital photography,
+          devoting almost every free moment to it. Through photos I try to show
+          people the world from my perspective. I am passionate about it, because of the
+          attention it has brought to my life and the motivation to focus more
+          deeply on my surrounding. <br /> <br />
+
+          I also love travelling. It try to take some time to
+           travel small and large, which I almost need as much as oxygen.
+           I love my home, but I try to take care of this
+          need whenever possible. In every city I visit, I want to feel what the
+          place has to offer and learn as much as possible about it, while
+          avoiding the most famous tourist facilities. On the other hand, spending time in
+          nature taught me to relax in a new way, which in other
           conditions is almost impossible.
+
           <br /> <br /> Other (and there aren't that many) moments I spend on
-          learning new things, my latest discoveries are riding a longboard and
-          playing a djembe drum. I try to improve my education in various fields
-          of knowledge with the help of popular science books, that allow me to
+          learning new things. My latest discoveries are riding longboard and
+          playing djembe drum. I also try to improve my education in various fields
+          of knowledge, using popular science books. It helps me to
           better understand how this world works.
           <br />
           <br />
           <h3>
             Check out my profile on
-            <a href="https://www.linkedin.com/in/justyna-ptak-ux/">
-              {" "}
-              LinkedIn{" "}
+            {" "}
+            <a href="https://www.linkedin.com/in/justyna-ptak-ux/" target="_blank">
+              LinkedIn
             </a>
-            or my
-            <a href={CV} download>
+            {" "}
+            or get my
+            {" "}
+            <a href={CV} target="_blank">
               CV
-            </a>
+            </a>.
           </h3>
         </div>
       </div>

@@ -78,8 +78,9 @@ const Photos = () => {
       <section className="sections">photography</section>
       <div className="photography">
         <p>
-          I bought my first camera a year and a half ago. The following works
-          are the result of my self-study. I work with Canon 550d camera and
+          The last thing I would like to share are my photos. Currently it's more of a hobby than profession, but it's something I really enjoy.
+          I bought my first camera in the beginning of 2019. The following photographs
+          are the result of my self-study. <br />I work with Canon 550d camera and
           Yongnuo 35mm lens.
         </p>
         <div className="photocontainer">

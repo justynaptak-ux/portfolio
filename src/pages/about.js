@@ -76,13 +76,13 @@ const About = () => {
           <h3>
             Check out my profile on
             {" "}
-            <a href="https://www.linkedin.com/in/justyna-ptak-ux/" target="_blank">
+            <a href="https://www.linkedin.com/in/justyna-ptak-ux/" target="_blank" rel="noreferrer">
               LinkedIn
             </a>
             {" "}
             or get my
             {" "}
-            <a href={CV} target="_blank">
+            <a href={CV} target="_blank" rel="noreferrer"> 
               CV
             </a>.
           </h3>
